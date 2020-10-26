@@ -27,7 +27,7 @@ body {
   position: absolute;
 }
 
-.overlay{
+.overlay img{
   position: relative;
   width: 100%;
   height: 100vh;
