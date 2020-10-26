@@ -20,3 +20,14 @@ add_action('wp_enqueue_scripts', 'custom_theme_scripts');
 Adds Featured Images
 ---------------------------- */
 add_theme_support('post-thumbnails');
+
+/*---------------------
+Custom Header Image
+---------------------------- */
+$custom_image_header = array(
+  'width'   => 225,
+  'height'  => 120,
+  'uploads' => true,
+);
+
+add_theme_support('custom-header', $custom_image_header);

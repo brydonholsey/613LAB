@@ -11,5 +11,13 @@
 
   <body <?php body_class(); ?>>
     <header>
-      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <?php the_post_thumbnail(); ?>
+          </div>
+        </div>
+      </div>
+
+
     </header>
