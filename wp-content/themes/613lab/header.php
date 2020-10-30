@@ -6,23 +6,46 @@
 
     <title><?php bloginfo('name'); ?></title>
 
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
+
     <?php wp_head(); ?>
+
+
+
   </head>
 
   <body <?php body_class(); ?>>
-    <header>
-
+    <header class="header">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="home-header-image">
-              <?php /* the_post_thumbnail(''); */ ?>
-              <img src="images/mountains.png" alt="">
-            </div>
-            <div class="overlay"> <img src="http://localhost:8888/613LAB/wp-content/uploads/2020/10/home-overlay.png" alt=""> </div>
-
+              <div class="col-md-6">
+                <ul>
+                  <li><a><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                
+              </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="wp-content/themes/613lab/images/logo-613.png" alt="">
           </div>
+          <div class="col-md-7">
+            <div class="home-buttons">
+              <button type="button" name="button-yellow">Apply</button>
+              <button type="button" name="button-yellowBorder">Learn More</button>
+            </div>
+            <div class="header-text">
+              <h1>Your Business. <br />Ascended.</h1>
+            </div>
+          </div>
+
         </div>
 
 
-
+      </div>
     </header>
