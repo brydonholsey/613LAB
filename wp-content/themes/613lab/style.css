@@ -52,7 +52,12 @@ h4,
 h5,
 h6 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+  color: #f1b244;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*----------------------------------
@@ -72,6 +77,8 @@ HEADER
 
 .header-top{
   height: 10vh;
+  display: flex;
+  align-items: center;
 }
 
 .center-header{
@@ -92,6 +99,33 @@ HEADER
 
 .home-logo img{
   max-width:75%;
+}
+
+.header-text h1{
+  font-style:italic;
+  font-size: 4rem;
+}
+
+.header-text span{
+  color: #fff;
+}
+
+.social-icons ul {
+  list-style: none;
+}
+
+.social-icons ul li{
+  display: inline-block;
+}
+
+.social-icons ul li i{
+  color: #34558B;
+  padding: 10px;
+  transition: all .2s;
+}
+
+.social-icons ul li i:hover{
+  color: #f1b244;
 }
 
 /*----------------------------------

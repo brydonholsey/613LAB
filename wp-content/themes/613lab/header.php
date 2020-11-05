@@ -8,7 +8,7 @@
 
     <!-- fonts -->
     <script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
 
     <?php wp_head(); ?>
 
@@ -46,7 +46,7 @@
               <button type="button" name="button-yellowBorder">Learn More</button>
             </div>
             <div class="header-text">
-              <h1>Your Business. <br />Ascended.</h1>
+              <h1><span>Your Business.</span> <br />Ascended.</h1>
             </div>
           </div>
 
