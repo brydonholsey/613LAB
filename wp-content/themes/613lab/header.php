@@ -19,14 +19,16 @@
     <header class="header">
       <div class="container-fluid">
         <div class="row">
-              <div class="col-md-6">
-                <ul>
+              <div class="col-md-5">
+              <div class="social-icons">
+              <ul>
                   <li><a><i class="fab fa-facebook-f"></i></a></li>
                   <li><a><i class="fab fa-linkedin-in"></i></a></li>
                   <li><a><i class="fab fa-instagram"></i></a></li>
                 </ul>
               </div>
-              <div class="col-md-6">
+              </div>
+              <div class="col-md-7">
                 
               </div>
         </div>
