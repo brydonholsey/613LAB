@@ -267,3 +267,31 @@ ul#menu-main-menu {
   visibility: visible;
   opacity: 0.98;
 }
+
+
+/*----------------------------------
+
+SECTIONS
+
+-----------------------------------*/
+
+section{
+  padding: 50px 0;
+}
+
+section h2{
+  color: #34558B;
+}
+
+section h3 {
+  color: #f1b244;
+}
+
+section h2,
+section h3 {
+  text-align: center;
+}
+
+.home-1 p:nth-last-of-type(2) {
+  color: #f1b244;
+}
