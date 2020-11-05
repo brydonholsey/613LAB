@@ -26,3 +26,23 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.header-top{
+  height: 10vh;
+}
+
+.center-header{
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+
+.home-logo {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.home-logo img{
+  max-width:75%;
+}

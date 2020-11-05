@@ -17,25 +17,28 @@
 
   <body <?php body_class(); ?>>
     <header class="header">
-      <div class="container-fluid">
-        <div class="row">
-              <div class="col-md-5">
-              <div class="social-icons">
-              <ul>
-                  <li><a><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a><i class="fab fa-linkedin-in"></i></a></li>
-                  <li><a><i class="fab fa-instagram"></i></a></li>
-                </ul>
+      <div class="container-fluid header-content">
+        <div class="row header-top">
+              <div class="col-md-6">
+                <div class="social-icons">
+                <ul>
+                    <li><a><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
               </div>
-              </div>
-              <div class="col-md-7">
+              <div class="col-md-6">
                 
               </div>
         </div>
-        <div class="row">
+        <div class="row center-header">
           <div class="col-md-5">
-            <img src="wp-content/themes/613lab/images/logo-613.png" alt="">
+            <div class="home-logo">
+              <img src="wp-content/themes/613lab/images/logo-613.png" alt="">
+            </div>
           </div>
+
           <div class="col-md-7">
             <div class="home-buttons">
               <button type="button" name="button-yellow">Apply</button>
