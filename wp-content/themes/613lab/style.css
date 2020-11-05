@@ -11,12 +11,55 @@ Text Domain: 613lab
 */
 
 
-/* -------------------- Sitewide Styles ------------------- */
+/*---------font examples--------------
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+-------------------------------------*/
+
+/*--------- colors -------------------
+
+yellow: #f1b244
+orange: #E68650
+red: #C44947
+purple: #34558B
+
+-----------------------------------*/
+
+
+/* -------------------- 
+
+Sitewide Styles 
+
+------------------- */
 
 body {
   font-family: 'Montserrat', sans-serif;
   color: #333;
 }
+
+/*----------------------------------
+
+FONTS
+
+-----------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+/*----------------------------------
+
+HEADER
+
+-----------------------------------*/
 
 .header {
   background-image: url('../613lab/images/home-background.png');

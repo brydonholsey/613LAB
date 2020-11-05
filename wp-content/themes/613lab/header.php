@@ -8,6 +8,7 @@
 
     <!-- fonts -->
     <script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
 
     <?php wp_head(); ?>
 
