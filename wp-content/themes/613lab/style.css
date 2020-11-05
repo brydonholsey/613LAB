@@ -37,6 +37,10 @@ body {
   height: 90vh;
 }
 
+.center-header-right {
+  text-align: center;
+}
+
 .home-logo {
   margin: 0 auto;
   width: 100%;
@@ -45,4 +49,25 @@ body {
 
 .home-logo img{
   max-width:75%;
+}
+
+/*----------------------------------
+
+BUTTONS
+
+-----------------------------------*/
+button {
+  background-color: #f1b244;
+  color: #fff;
+  padding: 10px 35px;
+  border: 3px solid #f1b244;
+  border-radius: 25px;
+  margin: 10px;
+  transition: all .2s;
+}
+
+button:hover {
+  border: 3px solid #f1b244;
+  background-color: transparent;
+  color: #f1b244;
 }

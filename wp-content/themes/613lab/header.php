@@ -39,7 +39,7 @@
             </div>
           </div>
 
-          <div class="col-md-7">
+          <div class="col-md-7 center-header-right">
             <div class="home-buttons">
               <button type="button" name="button-yellow">Apply</button>
               <button type="button" name="button-yellowBorder">Learn More</button>
