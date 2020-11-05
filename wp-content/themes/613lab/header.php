@@ -20,7 +20,7 @@
     <header class="header">
       <div class="container-fluid header-content">
         <div class="row header-top">
-              <div class="col-md-6">
+              <div class="col-lg-12 header-icons">
                 <div class="social-icons">
                 <ul>
                     <li><a><i class="fab fa-facebook-f"></i></a></li>
@@ -28,10 +28,36 @@
                     <li><a><i class="fab fa-instagram"></i></a></li>
                   </ul>
                 </div>
+
+                <!------------ mobile menu ------------>
+                <div>
+                  <div id="hamburger">
+                    <i class="fas fa-bars"></i>
+                  </div>
+                  <div class="mobile-menu">
+                    <div class="mobile-menu__items">
+                      <?php
+                        if(has_nav_menu('main-menu')){
+                          wp_nav_menu(array(
+                            'theme_location'  => 'main-menu',
+                            'container_class' => 'main_menu'
+                          ));
+                        }else{
+                          echo "<p>Please select a main menu through the dashboard</p>";
+                        }
+                      ?>
+                    </div>
+                  </div>
+                </div>
+              
+<!------------- mobile menu end --------------->
+
               </div>
-              <div class="col-md-6">
+             
+
+
                 
-              </div>
+              
         </div>
         <div class="row center-header">
           <div class="col-md-5">
