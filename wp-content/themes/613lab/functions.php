@@ -188,23 +188,24 @@ Register advanced custom fields
 
 ---------------------------- */
 
-
+/*-------------- HOME PAGE ------------------*/
 if(function_exists('acf_add_local_field_group')){
+
   acf_add_local_field_group(array(
-    'key'     => 'home-tag-line',
-    'title'   => 'Home Tag Line',
+    'key'     => 'home-section-1',
+    'title'   => 'Homepage Section 1',
     'fields'  => array(
       array (
-        'key'   => 'home-tagline-input',
-        'label' => 'Tagline',
-        'name'  => 'home-tagline-input',
-        'type'  => 'text'
+        'key'   => 'section-1',
+        'label' => 'Section 1 Content',
+        'name'  => 'section-1',
+        'type'  => 'textarea'
       ),
 
       array (
-        'key'   => 'home-tagline-input-2',
-        'label' => 'Extra Tagline',
-        'name'  => 'home-tagline-input-2',
+        'key'   => 'section-1-button',
+        'label' => 'Section 1 Button',
+        'name'  => 'section-1-button',
         'type'  => 'text'
       ),
     ),
@@ -222,122 +223,15 @@ if(function_exists('acf_add_local_field_group')){
     'position'  => 'acf_after_title'
   ));
 
-  acf_add_local_field_group(array(
-    'key'     => 'feature-text',
-    'title'   => 'Feature Text',
-    'fields'  => array(
-      array (
-        'key'   => 'feature-text-header',
-        'label' => 'Feature Text: Header',
-        'name'  => 'feature-text-header',
-        'type'  => 'textarea'
-      ),
-      array (
-        'key'   => 'feature-text-body',
-        'label' => 'Feature Text: Body',
-        'name'  => 'feature-text-body',
-        'type'  => 'textarea'
-      ),
-      array (
-        'key'   => 'learn-more-button',
-        'label' => 'Button',
-        'name'  => 'learn-more-button',
-        'type'  => 'text'
-      ),
-    ),
 
-    'location' => array(
-      array(
-        array(
-          'param'     => 'post_type',
-          'operator'  => '==',
-          'value'     => 'page'
-        ),
-        array(
-          'param'     => 'page_template',
-          'operator'  => '!=',
-          'value'     => 'page-about.php',
-        ),
-      ),
-    ),
 
-    'position'  => 'acf_after_title'
-  ));
 
-  acf_add_local_field_group(array(
-    'key'     => 'gradient-text',
-    'title'   => 'Gradient Text',
-    'fields'  => array(
-      array (
-        'key'   => 'gradient-text',
-        'label' => 'Display text if no featured image is set',
-        'name'  => 'gradient-text',
-        'type'  => 'wysiwyg'
-      ),
-    ),
 
-    'location' => array(
-      array(
-        array(
-          'param'     => 'page_template',
-          'operator'  => '==',
-          'value'     => 'page-feature-gradient.php'
-        ),
-      ),
-    ),
 
-    'position'  => 'acf_after_title'
-  ));
 
-  acf_add_local_field_group(array(
-    'key'     => 'header-tagline-int',
-    'title'   => 'Header Tagline',
-    'fields'  => array(
-      array (
-        'key'   => 'header-tagline-int',
-        'label' => 'Header Tagline',
-        'name'  => 'header-tagline-int',
-        'type'  => 'text'
-      ),
-    ),
 
-    'location' => array(
-      array(
-        array(
-          'param'     => 'page_template',
-          'operator'  => '==',
-          'value'     => 'page-feature-gradient.php'
-        ),
-      ),
-    ),
 
-    'position'  => 'acf_after_title'
-  ));
 
-  acf_add_local_field_group(array(
-    'key'     => 'logo-area',
-    'title'   => 'Logo Area',
-    'fields'  => array(
-      array (
-        'key'   => 'logo-area',
-        'label' => 'Integrations Logo Area',
-        'name'  => 'logo-area',
-        'type'  => 'wysiwyg'
-      ),
-    ),
-
-    'location' => array(
-      array(
-        array(
-          'param'     => 'page_template',
-          'operator'  => '==',
-          'value'     => 'page-feature-gradient.php'
-        ),
-      ),
-    ),
-
-    'position'  => 'normal'
-  ));
 
   acf_add_local_field_group(array(
     'key'     => 'above-footer',
@@ -350,16 +244,6 @@ if(function_exists('acf_add_local_field_group')){
         'type'  => 'wysiwyg'
       ),
     ),
-
-    // 'location' => array(
-    //   array(
-    //     array(
-    //       'param'     => 'page_template',
-    //       'operator'  => '==',
-    //       'value'     => 'page-feature-gradient.php',
-    //     ),
-    //   ),
-    // ),
 
     'location' => array(
             // each OR group is an array
@@ -384,41 +268,4 @@ if(function_exists('acf_add_local_field_group')){
 
     'position'  => 'normal'
   ));
-
-/*----------------
-About Page
------------------*/
-  acf_add_local_field_group(array(
-    'key'     => 'history',
-    'title'   => 'History',
-    'fields'  => array(
-      array (
-        'key'   => 'history-header',
-        'label' => 'Header',
-        'name'  => 'history-header',
-        'type'  => 'text'
-      ),
-      array (
-        'key'   => 'history-area',
-        'label' => 'History of Company',
-        'name'  => 'history-area',
-        'type'  => 'wysiwyg'
-      ),
-    ),
-
-    'location' => array(
-      array(
-        array(
-          'param'     => 'page_template',
-          'operator'  => '==',
-          'value'     => 'page-about.php'
-        ),
-      ),
-    ),
-
-    'position'  => 'acf_after_title'
-  ));
-
-
-
 }
