@@ -199,9 +199,21 @@ if(function_exists('acf_add_local_field_group')){
     'title'   => 'Homepage Section 1',
     'fields'  => array(
       array (
-        'key'   => 'section-1',
+        'key'   => 'section-1-header',
+        'label' => 'Section 1 Header',
+        'name'  => 'section-1-header',
+        'type'  => 'wysiwyg'
+      ),
+      array (
+        'key'   => 'section-1-subheader',
+        'label' => 'Section 1 Subheader',
+        'name'  => 'section-1-subheader',
+        'type'  => 'text'
+      ),
+      array (
+        'key'   => 'section-1-content',
         'label' => 'Section 1 Content',
-        'name'  => 'section-1',
+        'name'  => 'section-1-content',
         'type'  => 'wysiwyg'
       ),
 

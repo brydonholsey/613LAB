@@ -296,6 +296,10 @@ section h3 {
   color: #f1b244;
 }
 
+.two-column-text {
+  /* column-count: 2; */
+}
+
 #home-4{
   background-image: url('wp-content/themes/613lab/images/app-background.png');
   height: 100%;

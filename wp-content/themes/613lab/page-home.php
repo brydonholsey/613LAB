@@ -19,11 +19,23 @@ if(have_posts()){
     the_post(); ?>
 
 <main>
-    <div class="container-fluid">
+    <div class="container">
 
         <?php if(!empty(get_field('section-1'))) { ?>
             <section id="home-1">
-                <?php the_field('section-1') ?>
+
+                <?php if(!empty(get_field('section-1-header'))) { ?>
+                    <p><?php the_field('section-1-header') ?></p>
+            <?php } ?>
+
+            <?php if(!empty(get_field('section-1-subheader'))) { ?>
+                <p><?php the_field('section-1-subheader') ?></p>
+            <?php } ?>
+
+            <?php if(!empty(get_field('section-1-content'))) { ?>
+                <p><?php the_field('section-1-content') ?></p>
+            <?php } ?>
+
                 <?php if(!empty(get_field('section-1-button'))) { ?>
                     <button type="button" name="learn-more"><?php the_field('section-1-button'); ?></button>
             <?php } ?>
