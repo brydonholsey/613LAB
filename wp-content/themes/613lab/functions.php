@@ -188,18 +188,21 @@ Register advanced custom fields
 
 ---------------------------- */
 
-/*-------------- HOME PAGE ------------------*/
+
+/*-------------- 
+home page 
+---------------*/
 if(function_exists('acf_add_local_field_group')){
 
   acf_add_local_field_group(array(
-    'key'     => 'home-section-1',
+    'key'     => 'section-1',
     'title'   => 'Homepage Section 1',
     'fields'  => array(
       array (
         'key'   => 'section-1',
         'label' => 'Section 1 Content',
         'name'  => 'section-1',
-        'type'  => 'textarea'
+        'type'  => 'wysiwyg'
       ),
 
       array (
@@ -215,7 +218,7 @@ if(function_exists('acf_add_local_field_group')){
         array(
           'param'     => 'page_template',
           'operator'  => '==',
-          'value'     => 'page-home.php'
+          'value'     => 'home.php'
         ),
       ),
     ),
@@ -223,49 +226,292 @@ if(function_exists('acf_add_local_field_group')){
     'position'  => 'acf_after_title'
   ));
 
-
-
-
-
-
-
-
-
-
-
   acf_add_local_field_group(array(
-    'key'     => 'above-footer',
-    'title'   => 'Above Footer',
+    'key'     => 'section-2',
+    'title'   => 'Homepage Section 2',
     'fields'  => array(
       array (
-        'key'   => 'above-footer-area',
-        'label' => 'Field above footer area',
-        'name'  => 'above-footer',
+        'key'   => 'section-2',
+        'label' => 'Section 2 Content',
+        'name'  => 'section-2',
         'type'  => 'wysiwyg'
+      ),
+
+      array (
+        'key'   => 'section-2-button',
+        'label' => 'Section 2 Button',
+        'name'  => 'section-2-button',
+        'type'  => 'text'
       ),
     ),
 
     'location' => array(
-            // each OR group is an array
-            array(
-              // if you wanted to add an "AND' rule it would go under here
-              array(
-                'param' => 'page_template',
-                'operator' => "==",
-                'value' => 'page-feature-gradient.php',
-              ),
-            ),
-            // this is another OR group
-            array(
-              // if you wanted to add an "AND' rule it would go under here
-              array(
-                'param' => 'page_template',
-                'operator' => "&&",
-                'value' => 'page-about.php',
-              ),
-            ),
-          ),
+      array(
+        array(
+          'param'     => 'page_template',
+          'operator'  => '==',
+          'value'     => 'home.php'
+        ),
+      ),
+    ),
 
-    'position'  => 'normal'
+    'position'  => 'acf_after_title'
   ));
+
+  acf_add_local_field_group(array(
+    'key'     => 'section-3',
+    'title'   => 'Homepage Section 3',
+    'fields'  => array(
+      array (
+        'key'   => 'section-3',
+        'label' => 'Section 3 Content',
+        'name'  => 'section-3',
+        'type'  => 'wysiwyg'
+      ),
+
+      array (
+        'key'   => 'section-3-button',
+        'label' => 'Section 3 Button',
+        'name'  => 'section-3-button',
+        'type'  => 'text'
+      ),
+    ),
+
+    'location' => array(
+      array(
+        array(
+          'param'     => 'page_template',
+          'operator'  => '==',
+          'value'     => 'home.php'
+        ),
+      ),
+    ),
+
+    'position'  => 'acf_after_title'
+  ));
+
+  acf_add_local_field_group(array(
+    'key'     => 'section-4',
+    'title'   => 'Homepage Section 4',
+    'fields'  => array(
+      array (
+        'key'   => 'section-4',
+        'label' => 'Section 4 Content',
+        'name'  => 'section-4',
+        'type'  => 'wysiwyg'
+      ),
+
+      array (
+        'key'   => 'section-4-button',
+        'label' => 'Section 4 Button',
+        'name'  => 'section-4-button',
+        'type'  => 'text'
+      ),
+    ),
+
+    'location' => array(
+      array(
+        array(
+          'param'     => 'page_template',
+          'operator'  => '==',
+          'value'     => 'home.php'
+        ),
+      ),
+    ),
+
+    'position'  => 'acf_after_title'
+  ));
+
+  acf_add_local_field_group(array(
+    'key'     => 'section-5',
+    'title'   => 'Homepage Section 5',
+    'fields'  => array(
+      array (
+        'key'   => 'section-5',
+        'label' => 'Section 5 Content',
+        'name'  => 'section-5',
+        'type'  => 'wysiwyg'
+      ),
+
+      array (
+        'key'   => 'section-5-button',
+        'label' => 'Section 5 Button',
+        'name'  => 'section-5-button',
+        'type'  => 'text'
+      ),
+    ),
+
+    'location' => array(
+      array(
+        array(
+          'param'     => 'page_template',
+          'operator'  => '==',
+          'value'     => 'home.php'
+        ),
+      ),
+    ),
+
+    'position'  => 'acf_after_title'
+  ));
+
+  acf_add_local_field_group(array(
+    'key'     => 'section-6',
+    'title'   => 'Homepage Section 6',
+    'fields'  => array(
+      array (
+        'key'   => 'section-6',
+        'label' => 'Section 6 Content',
+        'name'  => 'section-6',
+        'type'  => 'wysiwyg'
+      ),
+
+      array (
+        'key'   => 'section-6-button',
+        'label' => 'Section 6 Button',
+        'name'  => 'section-6-button',
+        'type'  => 'text'
+      ),
+    ),
+
+    'location' => array(
+      array(
+        array(
+          'param'     => 'page_template',
+          'operator'  => '==',
+          'value'     => 'home.php'
+        ),
+      ),
+    ),
+
+    'position'  => 'acf_after_title'
+  ));
+
+  acf_add_local_field_group(array(
+    'key'     => 'section-7',
+    'title'   => 'Homepage Section 7',
+    'fields'  => array(
+      array (
+        'key'   => 'section-7',
+        'label' => 'Section 7 Content',
+        'name'  => 'section-7',
+        'type'  => 'wysiwyg'
+      ),
+
+      array (
+        'key'   => 'section-7-button',
+        'label' => 'Section 7 Button',
+        'name'  => 'section-7-button',
+        'type'  => 'text'
+      ),
+    ),
+
+    'location' => array(
+      array(
+        array(
+          'param'     => 'page_template',
+          'operator'  => '==',
+          'value'     => 'home.php'
+        ),
+      ),
+    ),
+
+    'position'  => 'acf_after_title'
+  ));
+
+  acf_add_local_field_group(array(
+    'key'     => 'section-8',
+    'title'   => 'Homepage Section 8',
+    'fields'  => array(
+      array (
+        'key'   => 'section-8',
+        'label' => 'Section 8 Content',
+        'name'  => 'section-8',
+        'type'  => 'wysiwyg'
+      ),
+
+      array (
+        'key'   => 'section-8-button',
+        'label' => 'Section 8 Button',
+        'name'  => 'section-8-button',
+        'type'  => 'text'
+      ),
+    ),
+
+    'location' => array(
+      array(
+        array(
+          'param'     => 'page_template',
+          'operator'  => '==',
+          'value'     => 'home.php'
+        ),
+      ),
+    ),
+
+    'position'  => 'acf_after_title'
+  ));
+
+  acf_add_local_field_group(array(
+    'key'     => 'section-9',
+    'title'   => 'Homepage Section 9',
+    'fields'  => array(
+      array (
+        'key'   => 'section-9',
+        'label' => 'Section 9 Content',
+        'name'  => 'section-9',
+        'type'  => 'wysiwyg'
+      ),
+
+      array (
+        'key'   => 'section-9-button',
+        'label' => 'Section 9 Button',
+        'name'  => 'section-9-button',
+        'type'  => 'text'
+      ),
+    ),
+
+    'location' => array(
+      array(
+        array(
+          'param'     => 'page_template',
+          'operator'  => '==',
+          'value'     => 'home.php'
+        ),
+      ),
+    ),
+
+    'position'  => 'acf_after_title'
+  ));
+
+  acf_add_local_field_group(array(
+    'key'     => 'section-10',
+    'title'   => 'Homepage Section 10',
+    'fields'  => array(
+      array (
+        'key'   => 'section-10',
+        'label' => 'Section 10 Content',
+        'name'  => 'section-10',
+        'type'  => 'wysiwyg'
+      ),
+
+      array (
+        'key'   => 'section-10-button',
+        'label' => 'Section 10 Button',
+        'name'  => 'section-10-button',
+        'type'  => 'text'
+      ),
+    ),
+
+    'location' => array(
+      array(
+        array(
+          'param'     => 'page_template',
+          'operator'  => '==',
+          'value'     => 'home.php'
+        ),
+      ),
+    ),
+
+    'position'  => 'acf_after_title'
+  ));
+
 }
