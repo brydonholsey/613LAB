@@ -20,47 +20,100 @@ if(have_posts()){
 
 <main>
     <div class="container-fluid">
-    <?php if(!empty(get_field('section-1'))) { ?>
-        <section class="home-1">
-            <?php the_field('section-1') ?>
-            <?php if(!empty(get_field('section-1-button'))) { ?>
-                <?php the_field('section-1-button') ?>
+
+        <?php if(!empty(get_field('section-1'))) { ?>
+            <section id="home-1">
+                <?php the_field('section-1') ?>
+                <?php if(!empty(get_field('section-1-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-1-button'); ?></button>
             <?php } ?>
-            
-        </section>
-   <?php } ?>
+            </section>
+        <?php } ?>
+
+        <?php if(!empty(get_field('section-2'))) { ?>
+            <section id="home-2">
+                <?php the_field('section-2') ?>
+                <?php if(!empty(get_field('section-2-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-2-button'); ?></button>
+            <?php } ?>
+            </section>
+        <?php } ?>
+
+        <?php if(!empty(get_field('section-3'))) { ?>
+            <section id="home-3">
+                <?php the_field('section-3') ?>
+                <?php if(!empty(get_field('section-3-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-3-button'); ?></button>
+            <?php } ?>
+            </section>
+        <?php } ?>
+
+        <?php if(!empty(get_field('section-4'))) { ?>
+            <section id="home-4">
+                <?php the_field('section-4') ?>
+                <?php if(!empty(get_field('section-4-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-4-button'); ?></button>
+            <?php } ?>
+            </section>
+        <?php } ?>
+
+        <?php if(!empty(get_field('section-5'))) { ?>
+            <section id="home-5">
+                <?php the_field('section-5') ?>
+                <?php if(!empty(get_field('section-5-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-5-button'); ?></button>
+            <?php } ?>
+            </section>
+        <?php } ?>
+
+        <?php if(!empty(get_field('section-6'))) { ?>
+            <section id="home-6">
+                <?php the_field('section-6') ?>
+                <?php if(!empty(get_field('section-6-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-6-button'); ?></button>
+            <?php } ?>
+            </section>
+        <?php } ?>
+
+        <?php if(!empty(get_field('section-7'))) { ?>
+            <section id="home-7">
+                <?php the_field('section-7') ?>
+                <?php if(!empty(get_field('section-7-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-7-button'); ?></button>
+            <?php } ?>
+            </section>
+        <?php } ?>
+
+        <?php if(!empty(get_field('section-8'))) { ?>
+            <section id="home-8">
+                <?php the_field('section-8') ?>
+                <?php if(!empty(get_field('section-8-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-8-button'); ?></button>
+            <?php } ?>
+            </section>
+        <?php } ?>
+
+        <?php if(!empty(get_field('section-9'))) { ?>
+            <section id="home-9">
+                <?php the_field('section-9') ?>
+                <?php if(!empty(get_field('section-9-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-9-button'); ?></button>
+            <?php } ?>
+            </section>
+        <?php } ?>
+
+        <?php if(!empty(get_field('section-10'))) { ?>
+            <section id="home-10">
+                <?php the_field('section-10') ?>
+                <?php if(!empty(get_field('section-10-button'))) { ?>
+                    <button type="button" name="learn-more"><?php the_field('section-10-button'); ?></button>
+            <?php } ?>
+            </section>
+        <?php } ?>
 
 
 
 
-
-        <section class="home-11">
-            <div class="text-content">
-            <?php
-              if(!empty(get_field('section-1'))) { ?>
-               <?php the_field('section-1') ?>
-              <?php } ?>
-            </div>
-            <?php
-            if(!empty(get_field('section-1-button'))) { ?>
-            <button type="button" name="learn-more"><?php the_field('section-1-button'); ?></button>
-          <?php } ?>
-        </section>
-
-        <section class="home-2">
-        </section>
-
-        <section class="home-3">
-        </section>
-
-        <section class="home-4">
-        </section>
-
-        <section class="home-5">
-        </section>
-
-        <section class="home-6">
-        </section>
 
     </div>
 
