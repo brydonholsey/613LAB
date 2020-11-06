@@ -19,37 +19,54 @@ if(have_posts()){
     the_post(); ?>
 
 <main>
-    <div class="container">
+    
 
         <?php if(!empty(get_field('section-1'))) { ?>
             <section id="home-1">
-
+                <div class="container">
                 <?php if(!empty(get_field('section-1-header'))) { ?>
-                    <p><?php the_field('section-1-header') ?></p>
-            <?php } ?>
+                    <div class="section-header">
+                        <?php the_field('section-1-header') ?>
+                    </div>
+                <?php } ?>
 
-            <?php if(!empty(get_field('section-1-subheader'))) { ?>
-                <p><?php the_field('section-1-subheader') ?></p>
-            <?php } ?>
+                <?php if(!empty(get_field('section-1-subheader'))) { ?>
+                    <div class="section-subheader">
+                        <h3><?php the_field('section-1-subheader') ?></h3>
+                    </div>
+                <?php } ?>
 
-            <?php if(!empty(get_field('section-1-content'))) { ?>
-                <p><?php the_field('section-1-content') ?></p>
-            <?php } ?>
+                <?php if(!empty(get_field('section-1-content'))) { ?>
+                    <div class="section-content two-column-text">
+                        <?php the_field('section-1-content') ?>
+                    </div>
+                    
+                <?php } ?>
 
                 <?php if(!empty(get_field('section-1-button'))) { ?>
-                    <button type="button" name="learn-more"><?php the_field('section-1-button'); ?></button>
-            <?php } ?>
+                        <div class="center-button">
+                            <button type="button" name="learn-more"><?php the_field('section-1-button'); ?></button>
+                        </div>
+                <?php } ?>
+
+                </div>
             </section>
         <?php } ?>
 
         <?php if(!empty(get_field('section-2'))) { ?>
             <section id="home-2">
-                <?php the_field('section-2') ?>
-                <?php if(!empty(get_field('section-2-button'))) { ?>
-                    <button type="button" name="learn-more"><?php the_field('section-2-button'); ?></button>
-            <?php } ?>
+                <div class="container">
+                    <div class="section-content">
+                        <?php the_field('section-2') ?>
+                    </div>
+                    <?php if(!empty(get_field('section-2-button'))) { ?>
+                        <button type="button" name="learn-more"><?php the_field('section-2-button'); ?></button>
+                    <?php } ?>
+                </div>
+                
             </section>
         <?php } ?>
+        
 
         <?php if(!empty(get_field('section-3'))) { ?>
             <section id="home-3">
@@ -124,10 +141,6 @@ if(have_posts()){
         <?php } ?>
 
 
-
-
-
-    </div>
 
 </main>
 

@@ -56,6 +56,17 @@ h6 {
   color: #f1b244;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
 }
@@ -156,7 +167,77 @@ button:hover {
   color: #f1b244;
 }
 
-/*--------------- Menu Button -----------------*/
+.center-button{
+  text-align: center;
+}
+
+
+
+/*----------------------------------
+
+SECTIONS
+
+-----------------------------------*/
+
+section{
+  padding: 50px 0;
+}
+
+section h2{
+  color: #34558B;
+}
+
+section h3 {
+  color: #f1b244;
+}
+
+section h2,
+section h3 {
+  text-align: center;
+}
+
+.section-header{
+  margin-bottom: 1.5rem;
+}
+
+.section-subheader{
+  margin-bottom: 3rem;
+}
+
+.section-content {
+  padding: 20px 0;
+}
+
+.home-1 p:nth-last-of-type(2) {
+  color: #f1b244;
+}
+
+.two-column-text {
+ column-count: 2;
+ column-gap: 50px; 
+}
+
+#home-4{
+  background-image: url('wp-content/themes/613lab/images/app-background.png');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+/*----------------------------------
+
+MENU BUTTON
+
+-----------------------------------*/
 
 
 #hamburger {
@@ -268,43 +349,4 @@ ul#menu-main-menu {
   opacity: 0.98;
 }
 
-
-/*----------------------------------
-
-SECTIONS
-
------------------------------------*/
-
-section{
-  padding: 50px 0;
-}
-
-section h2{
-  color: #34558B;
-}
-
-section h3 {
-  color: #f1b244;
-}
-
-section h2,
-section h3 {
-  text-align: center;
-}
-
-.home-1 p:nth-last-of-type(2) {
-  color: #f1b244;
-}
-
-.two-column-text {
-  /* column-count: 2; */
-}
-
-#home-4{
-  background-image: url('wp-content/themes/613lab/images/app-background.png');
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-}
+/*------------- END MENU BUTTON --------------------*/
