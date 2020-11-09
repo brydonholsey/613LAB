@@ -161,6 +161,7 @@ function myPostNavigation(){?>
   </div>
 <?php }
 
+
 /*----------------------------
 
 Create Widget Areas
@@ -178,16 +179,67 @@ function blank_widgets_init(){
     'after_title'   => '</h3>'
   ));
 
+  register_sidebar(array(
+    'name'          => ('Archive Sidebar'),
+    'id'            => 'archive-sidebar',
+    'description'   => 'Widget area in archive sidebar',
+    'before_widget' => '<div class="archive-sidebar">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ));
+
+  register_sidebar(array(
+    'name'          => ('Contact Areas'),
+    'id'            => 'contact-areas',
+    'description'   => 'Widget area with contact info',
+    'before_widget' => '<div class="contact-areas">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
+
+  register_sidebar(array(
+    'name'          => ('Left Footer'),
+    'id'            => 'left-footer',
+    'description'   => 'Widget area in middle of footer',
+    'before_widget' => '<div class="left-footer">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
+
+  register_sidebar(array(
+    'name'          => ('Middle Footer'),
+    'id'            => 'middle-footer',
+    'description'   => 'Widget area in middle of footer',
+    'before_widget' => '<div class="middle-footer">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
+
+  register_sidebar(array(
+    'name'          => ('Right Footer'),
+    'id'            => 'right-footer',
+    'description'   => 'Widget area in right of footer',
+    'before_widget' => '<div class="right-footer">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
 }
 
 add_action('widgets_init', 'blank_widgets_init');
+
+
+
 
 /*----------------------------
 
 Register advanced custom fields
 
 ---------------------------- */
-
 
 /*-------------- 
 home page 

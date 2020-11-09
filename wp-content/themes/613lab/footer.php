@@ -1,19 +1,34 @@
 <footer>
   <div class="container">
 
-    <nav class="row">
-        <div class="col-md-3">
-          <div id="social"><?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?></div>
+    <div class="row footer-content">
+        <div class="col-md-4 left-footer">
+          <div id="social">
+            <?php dynamic_sidebar( 'right-footer' );?>
+        </div>
         </div>
 
-        <div class="col-md-4">
-            <p><a href="mailto:">MRphotography@gmail.com</a></p>
-            <p>ADDRESS HERE</p>
-            <p>Placeholder for APPLY and CONTACT buttons</p>
-            <p>Copyright &copy; 613LAB </p>
+        <div class="col-md-4 middle-footer">
+          <div class="middle-footer-text">
+            <p>hello@613lab.com</p>
+            <p>1234 Main Street | Ontario, Canada</p>
+          </div>
+          <div class="middle-footer-buttons">
+
+          </div>
+          <div class="middle-footer-copyright">
+            <p>Copyright &copy; <?php echo get_the_date('Y');?> 613LAB </p>
+          </div>
+          
         </div>
 
-    </nav>
+        <div class="col-md-4 right-footer">
+          <?php dynamic_sidebar( 'right-footer' );?>
+        </div>
+
+      </div>
+
+    </div>
   </div> <!--end container-->
 
   </footer>
