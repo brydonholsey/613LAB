@@ -202,11 +202,7 @@ function blank_widgets_init(){
   register_sidebar(array(
     'name'          => ('Left Footer'),
     'id'            => 'left-footer',
-    'description'   => 'Widget area in middle of footer',
-    'before_widget' => '<div class="left-footer">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>'
+    'description'   => 'Widget area in middle of footer'
   ));
 
   register_sidebar(array(

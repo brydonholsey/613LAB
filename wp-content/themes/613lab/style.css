@@ -350,3 +350,54 @@ ul#menu-main-menu {
 }
 
 /*------------- END MENU BUTTON --------------------*/
+
+
+
+/*----------------------------------
+
+FOOTER
+
+-----------------------------------*/
+
+footer {
+  background-color: #34558B;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.middle-footer {
+  text-align: center;
+}
+
+.middle-footer-copyright{
+  opacity: .5;
+  font-size: .7rem;
+}
+
+.middle-footer-buttons {
+  padding:20px 0;
+}
+
+footer button {
+  background-color: #fff;
+  border-color: #fff;
+  color: #34558B;
+}
+
+footer button:first-child {
+  background-color:transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+footer button:hover {
+  background-color:transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+footer button:first-child:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #34558B;
+}
