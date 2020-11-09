@@ -217,14 +217,58 @@ section h3 {
  column-gap: 50px; 
 }
 
+#home-2{
+  background-color: #FAFAFA;
+}
+
 #home-4{
-  background-image: url('wp-content/themes/613lab/images/app-background.png');
+  background-color: #FAFAFA;
+  background-image: url(images/app-background.png);
+  background-size: 90%;
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
 }
+
+.application-process{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  height: 500px;
+}
+
+.app-number,
+.app-text{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.app-number{
+  font-size: 8rem;
+}
+
+.application-width-30 {
+  width: 33.3333%;
+}
+
+.application-width-50 {
+  width: 50%;
+}
+
+.step-1,
+.step-2,
+.step-3,
+.step-4 {
+  padding: 50px 0;
+}
+
+
 
 
 
@@ -400,4 +444,10 @@ footer button:first-child:hover {
   background-color: #fff;
   border-color: #fff;
   color: #34558B;
+}
+
+.left-footer,
+.right-footer {
+  display: flex;
+  align-items: center;
 }

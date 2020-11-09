@@ -66,7 +66,7 @@ if(have_posts()){
                 
             </section>
         <?php } ?>
-        
+
 
         <?php if(!empty(get_field('section-3'))) { ?>
             <section id="home-3">
@@ -77,12 +77,40 @@ if(have_posts()){
             </section>
         <?php } ?>
 
-        <?php if(!empty(get_field('section-4'))) { ?>
+        <?php if(!empty(get_field('application-step-1'))) { ?>
             <section id="home-4">
-                <?php the_field('section-4') ?>
+                <div class="application-process">
+                    <div class="step-1 application-width-30">
+                        <div class="application-box">
+                            <h2 class="app-number">1</h2>
+                            <div class="app-text"><?php the_field('application-step-1') ?></div>
+                        </div>
+                    </div>
+                    <div id="app-process" class="application-width-30"><h2 class="application-box">Application<br />Process</h2></div>
+                    <div class="step-2 application-width-30">
+                        <div class="application-box">
+                            <h2 class="app-number">2</h2>
+                            <div class="app-text"><?php the_field('application-step-2') ?></div>
+                        </div>
+                    </div>
+                    <div class="step-3 application-width-50">
+                        <div class="application-box">
+                            <h2 class="app-number">3</h2>
+                            <div class="app-text"><?php the_field('application-step-3') ?></div>
+                        </div>
+                    </div>
+                    <div class="step-4 application-width-50">
+                        <div class="application-box">
+                            <h2 class="app-number">4</h2>
+                            <div class="app-text"><?php the_field('application-step-4') ?></div>
+                        </div>
+                    </div>
+                </div>
+                
                 <?php if(!empty(get_field('section-4-button'))) { ?>
                     <button type="button" name="learn-more"><?php the_field('section-4-button'); ?></button>
             <?php } ?>
+
             </section>
         <?php } ?>
 
