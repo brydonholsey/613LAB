@@ -269,14 +269,6 @@ section h3 {
 }
 
 
-
-
-
-
-
-
-
-
 /*----------------------------------
 
 MENU BUTTON
@@ -342,13 +334,14 @@ MENU BUTTON
   z-index: 1;
   position: absolute;
   top: 0px;
-  background-image: linear-gradient(to bottom right, rgb(53, 124, 167), rgb(27,62,84));
-  width: 100%;
-  height: 100%;
+  background-color: #f1b244;
+  height: 100vh;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease-out;
   display: table;
+  right: 0px;
+  width: 40%;
 }
 /* .mobile-menu .mobile-menu__items {
   display: flex;
@@ -360,7 +353,6 @@ ul#menu-main-menu {
     padding-left: 0;
     display: flex;
     flex-direction: column;
-    width: 100vw;
     margin-top: 100px;
     height: 65vh;
     justify-content: space-between;
@@ -391,6 +383,7 @@ ul#menu-main-menu {
 .mobile-menu.active {
   visibility: visible;
   opacity: 0.98;
+  z-index: 999;
 }
 
 /*------------- END MENU BUTTON --------------------*/
