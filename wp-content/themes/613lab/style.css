@@ -28,6 +28,14 @@ purple: #34558B
 -----------------------------------*/
 
 
+/*--------- colors -------------------
+
+Menu: https://codepen.io/mburakerman/pen/zrNYwZ
+
+-----------------------------------*/
+
+
+
 /* -------------------- 
 
 Sitewide Styles 
@@ -69,6 +77,10 @@ h3 {
 
 p {
   font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /*----------------------------------
@@ -180,6 +192,10 @@ HEADER
   color: #f1b244;
 }
 
+#hamburger .line .colorChangePurple {
+color: #34558B;
+}
+
 /*----------------------------------
 
 BUTTONS
@@ -228,10 +244,7 @@ section h3 {
 section h2,
 section h3 {
   text-align: center;
-}
-
-.section-header{
-  margin-bottom: 1.5rem;
+  padding-bottom:1.5rem;
 }
 
 .section-subheader{
@@ -299,6 +312,7 @@ section h3 {
 .app-text::first-line{
   color:#f1b244;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .application-width-30 {
@@ -438,7 +452,9 @@ ul#menu-main-menu {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease-out;
+  padding:1.5% 0;
 }
+
 .mobile-menu .mobile-menu__items li:hover {
   transform: translate(20px);
 }
