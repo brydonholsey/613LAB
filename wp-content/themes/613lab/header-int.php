@@ -51,7 +51,7 @@
                     <div class="line" id="three-int"></div>
                   </div>
                   <div class="mobile-menu">
-                      <div><img src="wp-content/themes/613lab/images/logo-613-hz.png" alt=""></div>
+                      <div><img src="../wp-content/themes/613lab/images/logo-613-hz.png" alt=""></div>
                       <div id="slide-out-nav" class="mobile-menu__items">
                         <?php
                           if(has_nav_menu('main-menu')){

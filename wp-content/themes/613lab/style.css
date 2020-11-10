@@ -90,7 +90,7 @@ HEADER
 -----------------------------------*/
 
 .header {
-  background-image: url('../613lab/images/home-background.png');
+  background-image: url('../613lab/images/mountains.png');
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -434,7 +434,7 @@ MENU BUTTON
   transition: all 0.3s ease-out;
   display: table;
   right: 0px;
-  width: 40%;
+  width: 100%;
   padding: 3%;
   color: #fff;
 }
@@ -561,3 +561,35 @@ footer button:first-child:hover {
   display: flex;
   align-items: center;
 }
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+  .header {
+    background-image: url('../613lab/images/home-background.png');
+  }
+
+  .mobile-menu {
+    width: 60%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .mobile-menu {
+    width: 40%;
+  }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+ }
