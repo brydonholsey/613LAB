@@ -192,8 +192,8 @@ HEADER
   color: #f1b244;
 }
 
-#hamburger .line .colorChangePurple {
-color: #34558B;
+.color-change-purple {
+background: #34558B !important;
 }
 
 /*----------------------------------
@@ -221,6 +221,21 @@ button:hover {
   text-align: center;
 }
 
+#apply-button,
+#apply-button-int{
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 9;
+}
+
+.apply-button-hide{
+  visibility: hidden;
+}
+
+.apply-button-show{
+  visibility: visible;
+}
 
 
 /*----------------------------------
@@ -343,7 +358,7 @@ MENU BUTTON
   cursor: pointer;
   transition: all 0.3s ease-out;
   text-align: right;
-  position: absolute;
+  position: fixed;
   top: 25px;
   right: 30px;
   width: 40px;
@@ -357,15 +372,6 @@ MENU BUTTON
   background: #fff;
   margin: 8px auto;
   backface-visibility: hidden;
-}
-#hamburger.active #one {
-  transform: rotate(45deg) translateX(6px) translateY(6px);
-}
-#hamburger.active #two {
-  opacity: 0;
-}
-#hamburger.active #three {
-  transform: rotate(-45deg) translateX(10px) translateY(-12px);
 }
 
 #hamburger h6{
@@ -404,19 +410,22 @@ MENU BUTTON
   transform: rotate(180deg);
   z-index: 999;
 }
- #hamburger.active #one {
+ #hamburger.active #one,
+ #hamburger.active #one-int {
   transform: rotate(45deg) translateX(6px) translateY(6px);
 }
-#hamburger.active #two {
+#hamburger.active #two,
+#hamburger.active #two-int {
   opacity: 0;
 }
-#hamburger.active #three {
+#hamburger.active #three,
+#hamburger.active #three-int {
   transform: rotate(-45deg) translateX(8px) translateY(-8px);
 } 
 
 .mobile-menu {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0px;
   background-color: #f1b244;
   height: 100vh;

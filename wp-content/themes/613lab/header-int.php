@@ -10,6 +10,9 @@
     <script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
 
+    <!--- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <?php wp_head(); ?>
 
 
@@ -43,9 +46,9 @@
     <!------------ mobile menu ------------>
     <nav>
                   <div id="hamburger">
-                    <div class="line" id="one"></div>
-                    <div class="line" id="two"></div>
-                    <div class="line" id="three"></div>
+                    <div class="line" id="one-int"></div>
+                    <div class="line" id="two-int"></div>
+                    <div class="line" id="three-int"></div>
                   </div>
                   <div class="mobile-menu">
                       <div><img src="wp-content/themes/613lab/images/logo-613-hz.png" alt=""></div>
@@ -76,3 +79,9 @@
                 </nav>
               
 <!------------- mobile menu end --------------->
+
+
+<!------------- apply button --------------->
+<div id="apply-button-int">
+<button type="button" name="button-yellow">Apply</button>
+</div>

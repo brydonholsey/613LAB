@@ -4,36 +4,36 @@ window.onload= function (){
     document.querySelector(".mobile-menu").classList.toggle("active");
   });
 
-
-//   var menuHoverItems = document.getElementById("slide-out-nav").getElementsByTagName("li");
-
-//   menuHoverItems.addEventListener('mouseover', function(){
-//     this.classList.toggle('show-line');
-//     document.querySelector("#slide-out-nav").classList.toggle("show-line");
-// });
-
 }
 
+$(document).on('scroll', function(){
+    if ( $(window).scrollTop() > 240) {
+        $('#one-int').addClass('color-change-purple');
+        $('#two-int').addClass('color-change-purple');
+        $('#three-int').addClass('color-change-purple');
+    } else {
+        $('#one-int').removeClass('color-change-purple');
+        $('#two-int').removeClass('color-change-purple');
+        $('#three-int').removeClass('color-change-purple');
+    }
+});
 
-window.scroll= function() {
+$(document).on('scroll', function(){
+    var homeOneTop = $('#home-1').offset();
 
-    var hamburgerMenu = document.getElementById('hamburger');
+    if ( $(window).scrollTop() > homeOneTop.top) {
+        $('#one').addClass('color-change-purple');
+        $('#two').addClass('color-change-purple');
+        $('#three').addClass('color-change-purple');
+        $('#apply-button').addClass('apply-button-show');
 
-    if hamburgerMenu.scrollTop() > 50 {
-        // hamburgerColorChange.addClass('colorChangePurple');
-        console.log('test');
+    } else {
+        $('#one').removeClass('color-change-purple');
+        $('#two').removeClass('color-change-purple');
+        $('#three').removeClass('color-change-purple');
+        $('#apply-button').removeClass('apply-button-show');
     };
-}
+});
 
-// $(function() {
-//     $(window).scroll(function () {
-//        if ($(this).scrollTop() > 50) {
-//           $('header').addClass('colorChangePurple')
-//        } 
-//        if ($(this).scrollTop() < 50) {
-//           $('header').removeClass('colorChangePurple')
-//        } 
-//     });
-//     });
 
 

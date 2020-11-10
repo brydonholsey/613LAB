@@ -10,6 +10,9 @@
     <script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
 
+       <!--- scripts -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <?php wp_head(); ?>
 
 
@@ -90,3 +93,9 @@
                 </nav>
               
 <!------------- mobile menu end --------------->
+
+
+<!------------- apply button --------------->
+<div id="apply-button" class="apply-button-hide">
+<button type="button" name="button-yellow">Apply</button>
+</div>
