@@ -108,6 +108,34 @@ HEADER
   text-align: center;
 }
 
+#header-int{
+  height: 30vh;
+  background-image: url('../613lab/images/mountains.png');
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+#header-int::before{
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background-color: rgba(52, 85, 139, .9);
+  height: 30vh;
+}
+
+.page-title{
+  text-align: center;
+  position: relative;
+  padding:30px;
+}
+
+.page-title h1{
+  color: #fff;
+}
+
 .home-logo {
   margin: 0 auto;
   width: 100%;
@@ -138,6 +166,12 @@ HEADER
 
 .social-icons ul li i{
   color: #34558B;
+  padding: 10px;
+  transition: all .2s;
+}
+
+#header-int .social-icons ul li i{
+  color: #fff;
   padding: 10px;
   transition: all .2s;
 }
@@ -249,6 +283,7 @@ section h3 {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .app-number,
@@ -290,10 +325,33 @@ MENU BUTTON
 
 
 #hamburger {
-  z-index: 999;
+  z-index: 1000;
   cursor: pointer;
   transition: all 0.3s ease-out;
   text-align: right;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#hamburger .line {
+  height: 2px;
+  background: #fff;
+  margin: 8px auto;
+  backface-visibility: hidden;
+}
+#hamburger.active #one {
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+#hamburger.active #two {
+  opacity: 0;
+}
+#hamburger.active #three {
+  transform: rotate(-45deg) translateX(10px) translateY(-12px);
 }
 
 #hamburger h6{
@@ -339,9 +397,8 @@ MENU BUTTON
   opacity: 0;
 }
 #hamburger.active #three {
-  transform: rotate(-45deg) translateX(10px) translateY(-12px);
+  transform: rotate(-45deg) translateX(8px) translateY(-8px);
 } 
-
 
 .mobile-menu {
   z-index: 1;
@@ -356,7 +413,17 @@ MENU BUTTON
   right: 0px;
   width: 40%;
   padding: 3%;
-  margin-top: -20px;
+  color: #fff;
+}
+
+.mobile-menu .social-icons ul li i {
+  color: #fff;
+  padding: 10px;
+  transition: all .2s;
+}
+
+.mobile-menu .social-icons ul li i:hover {
+  opacity: .7;
 }
 
 ul#menu-main-menu {
@@ -401,7 +468,7 @@ ul#menu-main-menu {
   z-index: 999;
 }
 
-.mobile-menu div{
+.mobile-menu > div{
   border-bottom:3px solid #fff;
   padding: 10% 0;
 }
