@@ -291,9 +291,21 @@ if(function_exists('acf_add_local_field_group')){
     'title'   => 'Homepage Section 2',
     'fields'  => array(
       array (
-        'key'   => 'section-2',
-        'label' => 'Section 2 Content',
-        'name'  => 'section-2',
+        'key'   => 'section-2-header',
+        'label' => 'Section 2 Header',
+        'name'  => 'section-2-header',
+        'type'  => 'wysiwyg'
+      ),
+      array (
+        'key'   => 'section-2-content-left',
+        'label' => 'Section 2 Content: Left',
+        'name'  => 'section-2-content-left',
+        'type'  => 'wysiwyg'
+      ),
+      array (
+        'key'   => 'section-2-content-right',
+        'label' => 'Section 2 Content: Right',
+        'name'  => 'section-2-content-right',
         'type'  => 'wysiwyg'
       ),
 

@@ -45,7 +45,7 @@ if(have_posts()){
 
                 <?php if(!empty(get_field('section-1-button'))) { ?>
                         <div class="center-button">
-                            <button type="button" name="learn-more"><?php the_field('section-1-button'); ?></button>
+                            <button type="button" name="learn-more"><a href="#"><?php the_field('section-1-button'); ?></a></button>
                         </div>
                 <?php } ?>
 
@@ -56,8 +56,23 @@ if(have_posts()){
         <?php if(!empty(get_field('section-2'))) { ?>
             <section id="home-2">
                 <div class="container">
-                    <div class="section-content">
-                        <?php the_field('section-2') ?>
+                <?php if(!empty(get_field('section-2-header'))) { ?>
+                    <div class="section-header">
+                        <?php the_field('section-2-header') ?>
+                    </div>
+                <?php } ?>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="section-content">
+                                <?php the_field('section-2-content-left') ?>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="section-content">
+                                <?php the_field('section-2-content-right') ?>
+                            </div>
+                        </div>
                     </div>
                     <?php if(!empty(get_field('section-2-button'))) { ?>
                         <button type="button" name="learn-more"><?php the_field('section-2-button'); ?></button>

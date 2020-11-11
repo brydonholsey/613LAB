@@ -242,6 +242,14 @@ button:hover {
   visibility: visible;
 }
 
+button a{
+  color: #ffffff;
+}
+
+button a:hover{
+  color: #f1b244;
+}
+
 
 /*----------------------------------
 
@@ -261,14 +269,17 @@ section h3 {
   color: #f1b244;
 }
 
-section h2,
-section h3 {
+section h2 {
   text-align: center;
   padding-bottom:1.5rem;
 }
 
 .section-subheader{
   margin-bottom: 3rem;
+}
+
+#home-1 h3 {
+  text-align: center;
 }
 
 .section-content {
@@ -350,6 +361,11 @@ section h3 {
   padding: 50px 0;
 }
 
+section img{
+  max-width: 100%;
+  height: auto;
+}
+
 
 /*----------------------------------
 
@@ -366,7 +382,7 @@ MENU BUTTON
   position: fixed;
   top: 25px;
   right: 30px;
-  width: 40px;
+  width: 30px;
   height: 40px;
   cursor: pointer;
   transition: all 0.3s ease-out;
