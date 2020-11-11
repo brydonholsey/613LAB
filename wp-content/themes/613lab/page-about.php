@@ -22,7 +22,7 @@ if(have_posts()){
     <div class="container">
         <div class="row">
             <div class="col">
-            <section>
+            <section id="int-1">
               <?php the_content(); ?>
             </section>
             </div>

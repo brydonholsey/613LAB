@@ -90,7 +90,9 @@ HEADER
 -----------------------------------*/
 
 .header {
-  background-image: url('../613lab/images/mountains.png');
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, .9) 50%, rgba(52, 85, 139, .9) 50%),
+    url('../613lab/images/mountains.png');
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -102,6 +104,13 @@ HEADER
   height: 10vh;
   display: flex;
   align-items: center;
+}
+
+.header-top-fixed {
+  background-color: #34558B;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 .center-header{
@@ -150,7 +159,7 @@ HEADER
 
 .home-logo {
   margin: 0 auto;
-  width: 100%;
+  width: 50%;
   text-align: center;
 }
 
@@ -160,7 +169,7 @@ HEADER
 
 .header-text h1{
   font-style:italic;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .header-text span{
@@ -190,10 +199,6 @@ HEADER
 
 .social-icons ul li i:hover{
   color: #f1b244;
-}
-
-.color-change-purple {
-background: #34558B !important;
 }
 
 /*----------------------------------
@@ -369,10 +374,22 @@ MENU BUTTON
 
 #hamburger .line {
   height: 2px;
-  background: #fff;
+  background: #ffffff;
   margin: 8px auto;
   backface-visibility: hidden;
 }
+
+#hamburger .line-purple{
+  background: #34558B;
+}
+
+.color-change-purple {
+  background: #34558B !important;
+  }
+
+.color-change-white {
+  background: #fff !important;
+  }
 
 #hamburger h6{
   font-family: 'Nunito', sans-serif;
@@ -579,6 +596,14 @@ footer button:first-child:hover {
 
   .mobile-menu {
     width: 60%;
+  }
+
+  .home-logo {
+    width: 100%;
+  }
+
+  .header-text h1{
+    font-size: 4rem;
   }
 }
 

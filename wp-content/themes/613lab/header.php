@@ -22,7 +22,7 @@
   <body <?php body_class(); ?>>
     <header class="header">
       <div class="container-fluid header-content">
-        <div class="row header-top">
+        <div class="row header-top" id="header-top">
               <div class="col-lg-12 header-icons">
                 <div class="social-icons">
                   <ul>
