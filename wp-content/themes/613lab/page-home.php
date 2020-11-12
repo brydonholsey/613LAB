@@ -45,7 +45,7 @@ if(have_posts()){
 
                 <?php if(!empty(get_field('section-1-button'))) { ?>
                         <div class="center-button">
-                            <button type="button" name="learn-more"><a href="#"><?php the_field('section-1-button'); ?></a></button>
+                            <button type="button" name="learn-more"><a href="#"></a><?php the_field('section-1-button'); ?></button>
                         </div>
                 <?php } ?>
 
@@ -94,38 +94,52 @@ if(have_posts()){
 
         <?php if(!empty(get_field('application-step-1'))) { ?>
             <section id="home-4">
-                <div class="application-process">
-                    <div class="step-1 application-width-30">
-                        <div class="application-box">
-                            <h2 class="app-number">1</h2>
-                            <div class="app-text"><?php the_field('application-step-1') ?></div>
+                <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-md-4 application-box order-md-2">
+                            <div id="app-process" class="application-width-top">
+                                <h2>Application<br />Process</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-4 order-md-1">
+                            <div class="step-1 application-width-top">
+                                <div class="application-box">
+                                    <h2 class="app-number">1</h2>
+                                    <div class="app-text"><?php the_field('application-step-1') ?></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 order-md-3">
+                            <div class="step-2 application-width-top">
+                                <div class="application-box">
+                                    <h2 class="app-number">2</h2>
+                                    <div class="app-text"><?php the_field('application-step-2') ?></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div id="app-process" class="application-width-30"><h2 class="application-box">Application<br />Process</h2></div>
-                    <div class="step-2 application-width-30">
-                        <div class="application-box">
-                            <h2 class="app-number">2</h2>
-                            <div class="app-text"><?php the_field('application-step-2') ?></div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="step-3 application-width-bottom">
+                                <div class="application-box">
+                                    <h2 class="app-number">3</h2>
+                                    <div class="app-text"><?php the_field('application-step-3') ?></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="step-3 application-width-50">
-                        <div class="application-box">
-                            <h2 class="app-number">3</h2>
-                            <div class="app-text"><?php the_field('application-step-3') ?></div>
+                        <div class="col-md-6">
+                            <div class="step-4 application-width-bottom">
+                                <div class="application-box">
+                                    <h2 class="app-number">4</h2>
+                                    <div class="app-text"><?php the_field('application-step-4') ?></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="step-4 application-width-50">
-                        <div class="application-box">
-                            <h2 class="app-number">4</h2>
-                            <div class="app-text"><?php the_field('application-step-4') ?></div>
-                        </div>
-                    </div>
-                </div>
-                
+                    </div>    
                 <?php if(!empty(get_field('section-4-button'))) { ?>
                     <button type="button" name="learn-more"><?php the_field('section-4-button'); ?></button>
             <?php } ?>
-
+            </div>
             </section>
         <?php } ?>
 

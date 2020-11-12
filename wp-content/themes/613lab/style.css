@@ -290,11 +290,6 @@ section h2 {
   color: #f1b244;
 }
 
-.two-column-text {
- column-count: 2;
- column-gap: 50px; 
-}
-
 #home-2{
   background-color: #FAFAFA;
 }
@@ -311,6 +306,19 @@ section h2 {
   min-height: 600px;
 }
 
+#home-5{
+  background-color: #f1b244;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#home-5 h2,
+#home-5 h3{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .application-process{
   width: 100%;
   display: flex;
@@ -322,12 +330,9 @@ section h2 {
 }
 
 .application-box {
-  max-width: 75%;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app-number,
@@ -338,6 +343,7 @@ section h2 {
 
 .app-number{
   font-size: 8rem;
+  padding-right:10px;
 }
 
 .app-text::first-line{
@@ -346,19 +352,12 @@ section h2 {
   font-weight: 600;
 }
 
-.application-width-30 {
-  width: 33.3333%;
-}
-
-.application-width-50 {
-  width: 50%;
-}
-
 .step-1,
 .step-2,
 .step-3,
 .step-4 {
-  padding: 50px 0;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 section img{
@@ -539,6 +538,74 @@ ul#menu-main-menu {
 /*------------- END MENU BUTTON --------------------*/
 
 
+/*----------------------------------
+
+PLUGIN Customizations
+
+-----------------------------------*/
+.foogallery .fg-caption-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700 !important;
+  color: #f1b244 !important;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  text-align: center;
+  white-space: normal;
+}
+
+.fg-image {
+  max-width: 75% !important;
+  margin: 10px auto !important;
+}
+
+.fg-caption-desc {
+  text-align: center !important;
+}
+
+.sa_hover_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.sa_hover_container p{
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+.sa_hover_container p:nth-child(1)::before{
+  content: '"';
+  font-family: 'Raleway', sans-serif;
+  font-size: 15rem;
+  position: absolute;
+  opacity: .2;
+  top: -65px;
+  left: 0;
+}
+
+.sa_hover_container p:nth-child(1)::after{
+  content: '"';
+  font-family: 'Raleway', sans-serif;
+  font-size: 15rem;
+  position: absolute;
+  opacity: .2;
+  bottom: -140px;
+  right: 135px;
+}
+
+.sa_hover_container p:nth-last-child(1){
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
 
 /*----------------------------------
 
@@ -620,6 +687,17 @@ footer button:first-child:hover {
 
   .header-text h1{
     font-size: 4rem;
+  }
+
+  .two-column-text {
+    column-count: 2;
+    column-gap: 50px;
+  }
+  .step-1,
+  .step-2,
+  .step-3,
+  .step-4 {
+    padding: 50px 0;
   }
 }
 
