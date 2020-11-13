@@ -176,6 +176,14 @@ HEADER
   color: #fff;
 }
 
+.social-icons li {
+  list-style: none;
+}
+
+.simple-social-icons ul li:first-child {
+  margin-left: 0 !important;
+}
+
 .social-icons ul {
   list-style: none;
   padding-left:0;
@@ -264,15 +272,12 @@ section{
 
 section h2{
   color: #34558B;
+  text-align: center;
+  padding-bottom:1.5rem;
 }
 
 section h3 {
   color: #f1b244;
-}
-
-section h2 {
-  text-align: center;
-  padding-bottom:1.5rem;
 }
 
 .section-subheader{
@@ -291,7 +296,8 @@ section h2 {
   color: #f1b244;
 }
 
-#home-2{
+#home-2,
+#home-7{
   background-color: #FAFAFA;
 }
 
@@ -364,6 +370,14 @@ section h2 {
 section img{
   max-width: 100%;
   height: auto;
+}
+
+#home-6 h3,
+#home-7 h3,
+#home-8 h3,
+#home-9 h3,
+#home-10 h3 {
+  text-align: center;
 }
 
 
@@ -564,6 +578,10 @@ PLUGIN Customizations
   text-align: center !important;
 }
 
+#home-6 img.bf-img.fg-image{
+  border-radius: 200px;
+}
+
 .sa_hover_container {
   display: flex;
   justify-content: center;
@@ -611,6 +629,10 @@ PLUGIN Customizations
 label.wpforms-field-label {
   color: #f1b244;
   font-weight: 500 !important;
+}
+
+.owl-carousel .owl-item {
+  padding: 0 130px;
 }
 
 /*----------------------------------

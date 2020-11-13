@@ -25,11 +25,7 @@
         <div class="row header-top" id="header-top-int">
               <div class="col-lg-12 header-icons">
                 <div class="social-icons">
-                  <ul>
-                    <li><a><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a><i class="fab fa-instagram"></i></a></li>
-                  </ul>
+                  <?php dynamic_sidebar( 'top-left' ); ?>
                 </div>
               </div>
 
@@ -68,12 +64,8 @@
                         <p>1234 Main Street <br />
                         Ontario, Canada</p>
                         <div class="social-icons">
-                  <ul>
-                    <li><a><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a><i class="fab fa-instagram"></i></a></li>
-                  </ul>
-                </div>
+                          <?php dynamic_sidebar( 'slide-out-menu' ); ?>
+                        </div>
                       </div>
                   </div>
                 </nav>

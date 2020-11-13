@@ -169,15 +169,11 @@ Create Widget Areas
 ---------------------------- */
 
 function blank_widgets_init(){
-  // register_sidebar(array(
-  //   'name'          => ('Sidebar'),
-  //   'id'            => 'sidebar',
-  //   'description'   => 'Widget area in sidebar',
-  //   'before_widget' => '<div class="sidebar">',
-  //   'after_widget'  => '</div>',
-  //   'before_title'  => '<h3>',
-  //   'after_title'   => '</h3>'
-  // ));
+  register_sidebar(array(
+    'name'          => ('Top Left'),
+    'id'            => 'top-left',
+    'description'   => 'Widget area in top left',
+  ));
 
   // register_sidebar(array(
   //   'name'          => ('Archive Sidebar'),
