@@ -591,7 +591,7 @@ PLUGIN Customizations
 }
 
 .sa_hover_container p{
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -604,8 +604,8 @@ PLUGIN Customizations
   font-size: 15rem;
   position: absolute;
   opacity: .2;
-  top: -65px;
-  left: 0;
+  top: -20px;
+  left: 115px;
 }
 
 .sa_hover_container p:nth-child(1)::after{
@@ -621,7 +621,7 @@ PLUGIN Customizations
 .sa_hover_container p:nth-last-child(1){
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
 }
