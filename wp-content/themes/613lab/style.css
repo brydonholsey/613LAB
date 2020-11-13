@@ -614,8 +614,8 @@ PLUGIN Customizations
   font-size: 15rem;
   position: absolute;
   opacity: .2;
-  bottom: -140px;
-  right: 135px;
+  bottom: -100px;
+  right: 200px;
 }
 
 .sa_hover_container p:nth-last-child(1){
@@ -629,10 +629,6 @@ PLUGIN Customizations
 label.wpforms-field-label {
   color: #f1b244;
   font-weight: 500 !important;
-}
-
-.owl-carousel .owl-item {
-  padding: 0 130px;
 }
 
 /*----------------------------------
@@ -726,6 +722,10 @@ footer button:first-child:hover {
   .step-3,
   .step-4 {
     padding: 50px 0;
+  }
+
+  .owl-carousel .owl-item {
+    padding: 0 130px;
   }
 }
 
