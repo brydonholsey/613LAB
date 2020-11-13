@@ -604,8 +604,8 @@ PLUGIN Customizations
   font-size: 15rem;
   position: absolute;
   opacity: .2;
-  top: -20px;
-  left: 115px;
+  top: -65px;
+  left: 0px;
 }
 
 .sa_hover_container p:nth-child(1)::after{
@@ -614,8 +614,8 @@ PLUGIN Customizations
   font-size: 15rem;
   position: absolute;
   opacity: .2;
-  bottom: -100px;
-  right: 200px;
+  bottom: -135px;
+  right: 80px;
 }
 
 .sa_hover_container p:nth-last-child(1){
@@ -726,6 +726,16 @@ footer button:first-child:hover {
 
   .owl-carousel .owl-item {
     padding: 0 130px;
+  }
+
+  .sa_hover_container p:nth-child(1)::after{
+    bottom: -100px;
+    right: 200px;
+  }
+
+  .sa_hover_container p:nth-child(1)::before{
+    top: -20px;
+    left: 115px;
   }
 }
 
