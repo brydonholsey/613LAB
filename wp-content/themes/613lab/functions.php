@@ -169,34 +169,30 @@ Create Widget Areas
 ---------------------------- */
 
 function blank_widgets_init(){
-  register_sidebar(array(
-    'name'          => ('Sidebar'),
-    'id'            => 'sidebar',
-    'description'   => 'Widget area in sidebar',
-    'before_widget' => '<div class="sidebar">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ));
+  // register_sidebar(array(
+  //   'name'          => ('Sidebar'),
+  //   'id'            => 'sidebar',
+  //   'description'   => 'Widget area in sidebar',
+  //   'before_widget' => '<div class="sidebar">',
+  //   'after_widget'  => '</div>',
+  //   'before_title'  => '<h3>',
+  //   'after_title'   => '</h3>'
+  // ));
+
+  // register_sidebar(array(
+  //   'name'          => ('Archive Sidebar'),
+  //   'id'            => 'archive-sidebar',
+  //   'description'   => 'Widget area in archive sidebar',
+  //   'before_widget' => '<div class="archive-sidebar">',
+  //   'after_widget'  => '</div>',
+  //   'before_title'  => '<h3>',
+  //   'after_title'   => '</h3>'
+  // ));
 
   register_sidebar(array(
-    'name'          => ('Archive Sidebar'),
-    'id'            => 'archive-sidebar',
-    'description'   => 'Widget area in archive sidebar',
-    'before_widget' => '<div class="archive-sidebar">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
-  ));
-
-  register_sidebar(array(
-    'name'          => ('Contact Areas'),
-    'id'            => 'contact-areas',
-    'description'   => 'Widget area with contact info',
-    'before_widget' => '<div class="contact-areas">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>'
+    'name'          => ('Slide-out Menu'),
+    'id'            => 'slide-out-menu',
+    'description'   => 'Widget area at bottom of slide-out menu',
   ));
 
   register_sidebar(array(
