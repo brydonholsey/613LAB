@@ -206,7 +206,8 @@ HEADER
 BUTTONS
 
 -----------------------------------*/
-button {
+button,
+div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button {
   background-color: #f1b244;
   color: #fff;
   padding: 10px 35px;
@@ -216,7 +217,7 @@ button {
   transition: all .2s;
 }
 
-button:hover {
+button:hover, div.wpforms-container-full .wpforms-form input[type=submit]:hover, div.wpforms-container-full .wpforms-form input[type=submit]:focus, div.wpforms-container-full .wpforms-form input[type=submit]:active, div.wpforms-container-full .wpforms-form button[type=submit]:hover, div.wpforms-container-full .wpforms-form button[type=submit]:focus, div.wpforms-container-full .wpforms-form button[type=submit]:active, div.wpforms-container-full .wpforms-form .wpforms-page-button:hover, div.wpforms-container-full .wpforms-form .wpforms-page-button:active, div.wpforms-container-full .wpforms-form .wpforms-page-button:focus {
   border: 3px solid #f1b244;
   background-color: transparent;
   color: #f1b244;
@@ -605,6 +606,11 @@ PLUGIN Customizations
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
+}
+
+label.wpforms-field-label {
+  color: #f1b244;
+  font-weight: 500 !important;
 }
 
 /*----------------------------------
