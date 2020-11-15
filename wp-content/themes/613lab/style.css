@@ -227,7 +227,7 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
 
 button:hover, div.wpforms-container-full .wpforms-form input[type=submit]:hover, div.wpforms-container-full .wpforms-form input[type=submit]:focus, div.wpforms-container-full .wpforms-form input[type=submit]:active, div.wpforms-container-full .wpforms-form button[type=submit]:hover, div.wpforms-container-full .wpforms-form button[type=submit]:focus, div.wpforms-container-full .wpforms-form button[type=submit]:active, div.wpforms-container-full .wpforms-form .wpforms-page-button:hover, div.wpforms-container-full .wpforms-form .wpforms-page-button:active, div.wpforms-container-full .wpforms-form .wpforms-page-button:focus {
   border: 3px solid #f1b244;
-  background-color: transparent;
+  background-color: #fff;
   color: #f1b244;
 }
 
@@ -357,6 +357,10 @@ section h3 {
   color:#f1b244;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.app-text p {
+  margin-bottom: 0;
 }
 
 .step-1,
@@ -576,6 +580,10 @@ PLUGIN Customizations
 
 .fg-caption-desc {
   text-align: center !important;
+}
+
+.fg-simple_portfolio .fg-caption-title {
+  text-align: center;
 }
 
 #home-6 img.bf-img.fg-image{

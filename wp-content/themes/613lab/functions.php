@@ -362,28 +362,28 @@ if(function_exists('acf_add_local_field_group')){
         'key'   => 'application-step-1',
         'label' => 'Application Step 1',
         'name'  => 'application-step-1',
-        'type'  => 'text'
+        'type'  => 'wysiwyg'
       ),
 
       array (
         'key'   => 'application-step-2',
         'label' => 'Application Step 2',
         'name'  => 'application-step-2',
-        'type'  => 'text'
+        'type'  => 'wysiwyg'
       ),
 
       array (
         'key'   => 'application-step-3',
         'label' => 'Application Step 3',
         'name'  => 'application-step-3',
-        'type'  => 'text'
+        'type'  => 'wysiwyg'
       ),
 
       array (
         'key'   => 'application-step-4',
         'label' => 'Application Step 4',
         'name'  => 'application-step-4',
-        'type'  => 'text'
+        'type'  => 'wysiwyg'
       ),
 
       array (
