@@ -227,8 +227,12 @@ div.wpforms-container-full .wpforms-form input[type=submit], div.wpforms-contain
 
 button:hover, div.wpforms-container-full .wpforms-form input[type=submit]:hover, div.wpforms-container-full .wpforms-form input[type=submit]:focus, div.wpforms-container-full .wpforms-form input[type=submit]:active, div.wpforms-container-full .wpforms-form button[type=submit]:hover, div.wpforms-container-full .wpforms-form button[type=submit]:focus, div.wpforms-container-full .wpforms-form button[type=submit]:active, div.wpforms-container-full .wpforms-form .wpforms-page-button:hover, div.wpforms-container-full .wpforms-form .wpforms-page-button:active, div.wpforms-container-full .wpforms-form .wpforms-page-button:focus {
   border: 3px solid #f1b244;
-  background-color: #fff;
+  background-color: transparent;
   color: #f1b244;
+}
+
+#apply-button button:hover{
+  background-color: #fff;
 }
 
 .center-button{
@@ -256,7 +260,7 @@ button a{
 }
 
 button a:hover{
-  color: #f1b244;
+  color: #f1b244 !important;
 }
 
 
@@ -384,6 +388,10 @@ section img{
   text-align: center;
 }
 
+iframe {
+  width: 100%;
+}
+
 
 /*----------------------------------
 
@@ -490,6 +498,14 @@ MENU BUTTON
   color: #fff;
 }
 
+.mobile-menu a {
+  color: #fff;
+}
+
+.mobile-menu a:hover{
+  color: #34558B;
+}
+
 .mobile-menu .social-icons ul li i {
   color: #fff;
   padding: 10px;
@@ -583,7 +599,7 @@ PLUGIN Customizations
 }
 
 .fg-simple_portfolio .fg-caption-title {
-  text-align: center;
+  text-align: center !important;
 }
 
 #home-6 img.bf-img.fg-image{
@@ -694,6 +710,30 @@ footer button:first-child:hover {
   align-items: center;
 }
 
+.right-footer{
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+ul#menu-right-footer-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul#menu-right-footer-menu li{
+  padding: 6px 15px;
+  display: inline-block;
+}
+
+ul#menu-right-footer-menu a{
+  color: #fff;
+}
+
+ul#menu-right-footer-menu a:hover{
+  color: #f1b244;
+}
+
 
 
 
@@ -744,6 +784,16 @@ footer button:first-child:hover {
   .sa_hover_container p:nth-child(1)::before{
     top: -20px;
     left: 115px;
+  }
+
+  .right-footer{
+    justify-content: flex-end;
+    text-align: left;
+  }
+
+  ul#menu-right-footer-menu li{
+    padding: 6px 0;
+    display: block;
   }
 }
 

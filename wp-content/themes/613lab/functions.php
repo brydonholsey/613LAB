@@ -114,7 +114,8 @@ Add menus to our theme
 
 function register_my_menus(){
   register_nav_menus(array(
-    'main-menu'     => __('Main Menu')
+    'main-menu'             => __('Main Menu'),
+    'footer-right-menu'     => __('Right Footer Menu')
   ));
 }
 
@@ -170,9 +171,15 @@ Create Widget Areas
 
 function blank_widgets_init(){
   register_sidebar(array(
-    'name'          => ('Top Left'),
-    'id'            => 'top-left',
-    'description'   => 'Widget area in top left',
+    'name'          => ('Top Left Homepage'),
+    'id'            => 'top-left-home',
+    'description'   => 'Widget area in top left of homepage',
+  ));
+
+  register_sidebar(array(
+    'name'          => ('Top Left Internal'),
+    'id'            => 'top-left-int',
+    'description'   => 'Widget area in top left of internal pages',
   ));
 
   // register_sidebar(array(

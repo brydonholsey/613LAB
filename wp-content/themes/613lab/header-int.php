@@ -25,7 +25,7 @@
         <div class="row header-top" id="header-top-int">
               <div class="col-lg-12 header-icons">
                 <div class="social-icons">
-                  <?php dynamic_sidebar( 'top-left' ); ?>
+                  <?php dynamic_sidebar( 'top-left-int' ); ?>
                 </div>
               </div>
 
@@ -61,8 +61,10 @@
                         ?>
                       </div>
                       <div>
-                        <p>1234 Main Street <br />
-                        Ontario, Canada</p>
+                      <p><a href="businessascended@613LAB.com">businessascended@613LAB.com</a></p>
+                    <p>949 Clark Ave W <br />
+                    Vaughan, Ontario L4J 8G6 CA</p>
+                       <p> +1 917 651 7282</p>
                         <div class="social-icons">
                           <?php dynamic_sidebar( 'slide-out-menu' ); ?>
                         </div>
@@ -75,5 +77,5 @@
 
 <!------------- apply button --------------->
 <div id="apply-button-int">
-<button type="button" name="button-yellow">Apply</button>
+<a href="/613LAB/contact"><button type="button" name="button-yellow">Contact</button></a>
 </div>

@@ -25,7 +25,7 @@
         <div class="row header-top" id="header-top">
               <div class="col-lg-12 header-icons">
                 <div class="social-icons">
-                  <?php dynamic_sidebar( 'top-left' ); ?>
+                  <?php dynamic_sidebar( 'top-left-home' ); ?>
                 </div>
               </div>
         </div>
@@ -39,8 +39,8 @@
 
           <div class="col-md-7 center-header-right">
             <div class="home-buttons">
-              <button type="button" name="button-yellow">Apply</button>
-              <button type="button" name="button-yellowBorder">Learn More</button>
+              <a href="613LAB/contact"><button type="button" name="button-yellow">Contact</button></a>
+              <a href="613LAB/about"><button type="button" name="button-yellowBorder">Learn More</button></a>
             </div>
             <div class="header-text">
               <h1><span>Your Business.</span> <br />Ascended.</h1>
@@ -75,8 +75,10 @@
                         ?>
                       </div>
                       <div>
-                        <p>1234 Main Street <br />
-                        Ontario, Canada</p>
+                      <p><a href="businessascended@613LAB.com">businessascended@613LAB.com</a></p>
+                    <p>949 Clark Ave W <br />
+                    Vaughan, Ontario L4J 8G6 CA</p>
+                       <p> +1 917 651 7282</p>
                         <div class="social-icons">
                           <?php dynamic_sidebar( 'slide-out-menu' ); ?>
                         </div>
@@ -89,5 +91,5 @@
 
 <!------------- apply button --------------->
 <div id="apply-button" class="apply-button-hide">
-<button type="button" name="button-yellow">Apply</button>
+<a href="/613LAB/contact"><button type="button" name="button-yellow">Contact</button></a>
 </div>
