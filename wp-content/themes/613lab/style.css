@@ -572,6 +572,44 @@ ul#menu-main-menu {
 
 /*------------- END MENU BUTTON --------------------*/
 
+/*----------------------------------
+
+BLOG page style
+
+-----------------------------------*/
+
+#blog-page-content {
+  background-color: #F7F7F7;
+}
+
+.post-box {
+  border-top:10px solid #f1b244;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 30px;
+}
+
+.post-box-text{
+  padding: 15px 35px 35px; 
+}
+
+#blog-page-content a{
+  color: #f1b244;
+}
+
+#blog-page-content a:hover{
+  color: #E68650;
+}
+
+#blog-page-content h3{
+  font-weight: 700;
+}
+
+.post-data {
+  font-size: .8rem;
+  color: #ccc;
+}
+
 
 /*----------------------------------
 

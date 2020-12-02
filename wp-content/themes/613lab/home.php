@@ -9,26 +9,35 @@ endif; ?>
 
 
 
-<div class="container">
-  <div class="row">
-    <main class="col-md-8">
-      <section class="blog-article">
+<div class="container-fluid" id="blog-page-content">
+    <div class="row">
+    <main class="container">
+      <section class="blog-article row">
             <?php
               if(have_posts()){
                 while(have_posts()){
                   the_post(); ?>
-                    <article>
-                      <h2><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h2>
-                      <?php
-                        //display author and publish date links
-                        post_data();
-                      ?>
+                  
+                    <article class="col-lg-6">
+                    <div class="post-box">
+                        <?php the_post_thumbnail('large'); ?>
+                        <div class="post-box-text">
+                            <h3><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
+                            <div class="post-data"><?php
+                                //display author and publish date links
+                                post_data();
+                            ?></div>
 
-                      <p><?php echo get_the_excerpt(); ?></p>
+                            <p><?php echo get_the_excerpt(); ?></p>
 
-                      <a href="<?php the_permalink(); ?>">Read more</a>
-
+                            <a href="<?php the_permalink(); ?>"><button>Read more</button></a>
+                        </div>
+                     
+                      </div>
                     </article>
+               
+                  
+                    
 
       <?php
           }//end while loop
@@ -43,13 +52,7 @@ endif; ?>
       </section>
 
     </main>
-    <aside class="col-md-4 archive-right-sidebar">
-      <div class="search-form">
-        <?php get_search_form(); ?>
-      </div class="sidebar-categories">
-        <?php dynamic_sidebar('sidebar'); ?>
-    </aside>
-  </div>
+    </div>
 </div>
 
 
