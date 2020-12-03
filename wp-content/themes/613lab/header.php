@@ -7,7 +7,6 @@
     <title><?php bloginfo('name'); ?></title>
 
     <!-- fonts -->
-    <script src="https://kit.fontawesome.com/a61cb35b75.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Raleway:wght@200;400;600&display=swap" rel="stylesheet">
 
        <!--- scripts -->
@@ -24,8 +23,11 @@
       <div class="container-fluid header-content">
         <div class="row header-top" id="header-top">
               <div class="col-lg-12 header-icons">
-                <div class="social-icons">
+                <div class="social-icons col-sm-4">
                   <?php dynamic_sidebar( 'top-left-home' ); ?>
+                </div>
+                <div class="col-sm-4 fixed-header-logo">
+                <img src="wp-content/themes/613lab/images/logo-613-hz.png" alt="613LAB Horizontal Logo">
                 </div>
               </div>
         </div>
@@ -33,7 +35,7 @@
         <div class="row center-header">
           <div class="col-md-5">
             <div class="home-logo">
-              <img src="wp-content/themes/613lab/images/logo-613.png" alt="">
+              <img src="wp-content/themes/613lab/images/logo-613.png" alt="613LAB Logo">
             </div>
           </div>
 

@@ -45,7 +45,7 @@ if(have_posts()){
 
                 <?php if(!empty(get_field('section-1-button'))) { ?>
                         <div class="center-button">
-                            <button type="button" name="learn-more"><a href="#"></a><?php the_field('section-1-button'); ?></button>
+                            <a href="http://brydonsholsey.com/613LAB/#home-4"><button type="button" name="learn-more"><?php the_field('section-1-button'); ?></button></a>
                         </div>
                 <?php } ?>
 
@@ -123,6 +123,22 @@ if(have_posts()){
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6 order-md-4">
+                            <div class="step-2 application-width-bottom">
+                                <div class="application-box">
+                                    <h2 class="app-number">2</h2>
+                                    <div class="app-text"><?php the_field('application-step-2') ?></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-md-5">
+                            <div class="step-3 application-width-bottom">
+                                <div class="application-box">
+                                    <h2 class="app-number">3</h2>
+                                    <div class="app-text"><?php the_field('application-step-3') ?></div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-md-4 order-md-3">
                             <div class="step-4 application-width-top">
                                 <div class="application-box">
@@ -132,26 +148,9 @@ if(have_posts()){
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="step-2 application-width-bottom">
-                                <div class="application-box">
-                                    <h2 class="app-number">2</h2>
-                                    <div class="app-text"><?php the_field('application-step-2') ?></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="step-3 application-width-bottom">
-                                <div class="application-box">
-                                    <h2 class="app-number">3</h2>
-                                    <div class="app-text"><?php the_field('application-step-3') ?></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
+                       
                 <?php if(!empty(get_field('section-4-button'))) { ?>
-                    <div class="center-button"><button type="button" name="learn-more"><?php the_field('section-4-button'); ?></button></div>
+                    <div class="center-button"><a href="http://brydonsholsey.com/613LAB/apply/"><button type="button" name="learn-more"><?php the_field('section-4-button'); ?></button></a></div>
             <?php } ?>
             </div>
             </section>

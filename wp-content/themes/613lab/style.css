@@ -121,8 +121,15 @@ HEADER
 
 .header-icons{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+.fixed-header-logo{
+  text-align: center;
+}
+
+.fixed-header-logo img{
+  max-width:145px;
 }
 
 .center-header-right {
@@ -178,6 +185,7 @@ HEADER
 
 .social-icons li {
   list-style: none;
+  padding-top:27px;
 }
 
 .simple-social-icons ul li:first-child {
@@ -207,6 +215,15 @@ HEADER
 
 .social-icons ul li i:hover{
   color: #f1b244;
+}
+
+.interior-top-logo{
+  text-align: center;
+  visibility: hidden;
+}
+
+.interior-top-logo img{
+  max-width:130px;
 }
 
 /*----------------------------------
@@ -777,7 +794,9 @@ ul#menu-right-footer-menu a:hover{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-
+  .interior-top-logo{
+    visibility: visible;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -833,6 +852,11 @@ ul#menu-right-footer-menu a:hover{
     padding: 6px 0;
     display: block;
   }
+
+  .fixed-header-logo{
+    visibility: hidden;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
