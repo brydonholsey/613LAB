@@ -20,7 +20,7 @@ endif; ?>
                   
                     <article class="col-lg-6">
                     <div class="post-box">
-                        <?php the_post_thumbnail('large'); ?>
+                        <div class="post-image"><?php the_post_thumbnail('large'); ?></div>
                         <div class="post-box-text">
                             <h3><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
                             <div class="post-data"><?php
@@ -28,7 +28,7 @@ endif; ?>
                                 post_data();
                             ?></div>
 
-                            <p><?php echo get_the_excerpt(); ?></p>
+                            <p><?php echo wp_trim_words( get_the_content(), 30, ' [..]' ); ?></p>
 
                             <a href="<?php the_permalink(); ?>"><button>Read more</button></a>
                         </div>

@@ -23,10 +23,10 @@
       <div class="container-fluid header-content">
         <div class="row header-top" id="header-top">
               <div class="col-lg-12 header-icons">
-                <div class="social-icons col-sm-4">
+                <div class="social-icons ">
                   <?php dynamic_sidebar( 'top-left-home' ); ?>
                 </div>
-                <div class="col-sm-4 fixed-header-logo">
+                <div class="fixed-header-logo">
                 <img src="wp-content/themes/613lab/images/logo-613-hz.png" alt="613LAB Horizontal Logo">
                 </div>
               </div>
@@ -41,11 +41,12 @@
 
           <div class="col-md-7 center-header-right">
             <div class="home-buttons">
-              <a href="613LAB/contact"><button type="button" name="button-yellow">Contact</button></a>
+              <a href="613LAB/blog"><button type="button" name="button-yellow">Blog</button></a>
               <a href="613LAB/about"><button type="button" name="button-yellowBorder">Learn More</button></a>
             </div>
             <div class="header-text">
               <h1><span>Your Business.</span> <br />Ascended.</h1>
+              <h3>We are a community launching dreams today, inspiring innovation for tomorrow, and building foundations for a lifetime.</h3>
             </div>
           </div>
 

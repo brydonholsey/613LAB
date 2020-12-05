@@ -142,11 +142,6 @@ $(document).on('scroll', function(){
         $('#three').addClass('color-change-purple');
         $('#apply-button').addClass('apply-button-show');
 
-    } else {
-        $('#one').removeClass('color-change-purple');
-        $('#two').removeClass('color-change-purple');
-        $('#three').removeClass('color-change-purple');
-        $('#apply-button').removeClass('apply-button-show');
     };
 
     if ( (mediaSevenGreater.matches) && $(window).scrollTop() > intOneTop.top) {
