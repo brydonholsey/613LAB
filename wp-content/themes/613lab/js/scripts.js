@@ -21,6 +21,7 @@ window.onload= function (){
         $('#three').removeClass('color-change-purple');
     };
 
+
 };
 
 
@@ -30,7 +31,6 @@ $(document).on('scroll', function(){
     var mediaSevenLess = window.matchMedia('(max-width: 768px)');
     var homeOneTop = $('#home-1').offset();
     var intOneTop = $('#int-1').offset();
-
 
 //loads purple hamburger menu when screen is larger than 769 AND greater than 240px from top
     if ((mediaSevenGreater.matches) && $(window).scrollTop() > 240) {
@@ -48,9 +48,13 @@ $(document).on('scroll', function(){
     if ((mediaSevenLess.matches) && $(window).scrollTop() > 240) {
         $('#header-top').addClass('header-top-fixed');
         $('#header-top-int').addClass('header-top-fixed');
+        $('#home-top-logo').addClass('show');
+        $('#home-social-icons').addClass('hide');
     } else {
         $('#header-top').removeClass('header-top-fixed');
         $('#header-top-int').removeClass('header-top-fixed');
+        $('#home-top-logo').removeClass('show');
+        $('#home-social-icons').removeClass('hide');
     }
 
     if ((mediaSevenLess.matches) && $(window).scrollTop() < 240) {
@@ -87,21 +91,6 @@ $(document).on('scroll', function(){
     };
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 $(document).on('scroll', function(){

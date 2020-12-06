@@ -25,8 +25,8 @@ add_theme_support('post-thumbnails');
 Custom Header Image
 ---------------------------- */
 $custom_image_header = array(
-  'width'   => 225,
-  'height'  => 120,
+  'width'   => 344,
+  'height'  => 86,
   'uploads' => true,
 );
 
@@ -59,7 +59,7 @@ Archive Sidebar
 function archiveSidebar(){?>
 
   <aside class="col-lg-3 archive-sidebar">
-    <h2>Archives by Category:</h2>
+    <h3>Archives by Category:</h3>
 
     <ul class="category-list">
       <?php
@@ -71,7 +71,7 @@ function archiveSidebar(){?>
        ?>
      </ul>
 
-      <h2>Archives by Tag:</h2>
+      <h3>Archives by Tag:</h3>
       <ul class="tag-list">
         <?php
           $tags = get_tags();
@@ -82,7 +82,7 @@ function archiveSidebar(){?>
          ?>
       </ul>
 
-      <h2>Last 10 Posts:</h2>
+      <h3>Last 10 Posts:</h3>
 
       <ul class="recent-posts">
         <?php
@@ -93,7 +93,7 @@ function archiveSidebar(){?>
         <?php  }
         ?>
       </ul>
-      <h2>Archives by Month:</h2>
+      <h3>Archives by Month:</h3>
 
       <ul class="monthly-list">
         <?php

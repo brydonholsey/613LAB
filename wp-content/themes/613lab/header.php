@@ -23,11 +23,17 @@
       <div class="container-fluid header-content">
         <div class="row header-top" id="header-top">
               <div class="col-lg-12 header-icons">
-                <div class="social-icons ">
+                <div class="social-icons" id="home-social-icons">
                   <?php dynamic_sidebar( 'top-left-home' ); ?>
                 </div>
-                <div class="fixed-header-logo">
-                <img src="wp-content/themes/613lab/images/logo-613-hz.png" alt="613LAB Horizontal Logo">
+                <div class="fixed-header-logo" id="home-top-logo">
+                <?php
+              //Display logo if it is set, if not, display site title
+              if(get_header_image() == ''){?>
+                <h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name');?></a></h1>
+              <?php }else{ ?>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?> " width="<?php echo get_custom_header()->width; ?>" alt="Logo" /></a>
+              <?php } ?>
                 </div>
               </div>
         </div>
@@ -64,7 +70,13 @@
                     <div class="line" id="three"></div>
                   </div>
                   <div class="mobile-menu">
-                      <div><img src="wp-content/themes/613lab/images/logo-613-hz.png" alt=""></div>
+                      <div><?php
+              //Display logo if it is set, if not, display site title
+              if(get_header_image() == ''){?>
+                <h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name');?></a></h1>
+              <?php }else{ ?>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?> " width="<?php echo get_custom_header()->width; ?>" alt="Logo" /></a>
+              <?php } ?></div>
                       <div id="slide-out-nav" class="mobile-menu__items">
                         <?php
                           if(has_nav_menu('main-menu')){

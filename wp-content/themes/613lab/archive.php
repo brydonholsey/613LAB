@@ -33,13 +33,13 @@ endif; ?>
 
               <article class="individual-post">
                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <div class="archive-image"><?php the_post_thumbnail('large'); ?></div>
 
                   <?php
                     //display author and publish date links
                     post_data();
                   ?>
 
-                 <?php the_post_thumbnail('medium'); ?>
                  <?php the_excerpt(); ?>
               </article>
           <?php  } //end while

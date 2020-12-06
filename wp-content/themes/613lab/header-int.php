@@ -28,12 +28,32 @@
                 </div>
               </div>
               <div class="col-sm-4 interior-top-logo">
-              <img src="../wp-content/themes/613lab/images/logo-613-hz.png" alt="613LAB Horizontal Logo">
+              <?php
+              //Display logo if it is set, if not, display site title
+              if(get_header_image() == ''){?>
+                <h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name');?></a></h1>
+              <?php }else{ ?>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?> " width="<?php echo get_custom_header()->width; ?>" alt="Logo" /></a>
+              <?php } ?>
               </div>
 
         </div>
         <div class="page-title">
-          <h1><?php echo get_the_title(); ?></h1>
+          <h1><?php 
+    if ( is_home() ) {
+      echo "Blog";
+    } else if (is_single()) { // POST
+      echo "Blog";
+    } else if (is_page()) { // PAGE
+      echo get_the_title();
+    } else if (is_archive()) {
+      echo "Blog";
+    } else if(is_category()) {
+      $arr = get_the_category();
+      if ( ! empty( $arr ) ) {
+        echo esc_html( $arr[0]->name );   
+      }
+    }?></h1>
         </div>
         
 
@@ -49,7 +69,13 @@
                     <div class="line" id="three-int"></div>
                   </div>
                   <div class="mobile-menu">
-                      <div><img src="../wp-content/themes/613lab/images/logo-613-hz.png" alt="613LAB Horizontal Logo"></div>
+                      <div><?php
+              //Display logo if it is set, if not, display site title
+              if(get_header_image() == ''){?>
+                <h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name');?></a></h1>
+              <?php }else{ ?>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?> " width="<?php echo get_custom_header()->width; ?>" alt="Logo" /></a>
+              <?php } ?></div>
                       <div id="slide-out-nav" class="mobile-menu__items">
                         <?php
                           if(has_nav_menu('main-menu')){
