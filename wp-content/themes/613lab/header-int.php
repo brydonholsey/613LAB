@@ -89,7 +89,7 @@
                         ?>
                       </div>
                       <div>
-                      <p><a href="businessascended@613LAB.com">businessascended@613LAB.com</a></p>
+                      <p><a href="mailto:businessascended@613LAB.com">businessascended@613LAB.com</a></p>
                     <p>949 Clark Ave W <br />
                     Vaughan, Ontario L4J 8G6 CA</p>
                        <p> +1 917 651 7282</p>

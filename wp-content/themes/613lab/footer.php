@@ -14,7 +14,7 @@
 
         <div class="col-md-6 middle-footer order-md-2">
           <div class="middle-footer-text">
-            <p>businessascended@613LAB.com<br/>
+            <p><a href="mailto:businessascended@613LAB.com">businessascended@613LAB.com</a><br/>
             949 Clark Ave W | Vaughan, Ontario L4J 8G6 CA <br />
             +1 917 651 7282</p>
           </div>
@@ -32,8 +32,7 @@
 
       </div>
 
-    </div>
-  </div> <!--end container-->
+    </div> <!--end container-->
 
   </footer>
 

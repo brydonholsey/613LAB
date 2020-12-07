@@ -100,21 +100,6 @@ $(document).on('scroll', function(){
     var mediaSevenLess = window.matchMedia('(max-width: 768px)');
 
 
-    // var fiftyPercent = $(window).height()*0.5;
-    // var mediaSevenLess = window.matchMedia('(max-width: 768px)');
- 
-    // if ((mediaSevenLess.matches) && ($(window).scrollTop() > fiftyPercent)) {
-    //     $('#header-top').addClass('header-top-fixed');
-    //     $('#one-int').addClass('color-change-purple');
-    //     $('#two-int').addClass('color-change-purple');
-    //     $('#three-int').addClass('color-change-purple');
-    // } else {
-    //     $('#header-top').removeClass('header-top-fixed');
-    //     $('#one-int').removeClass('color-change-purple');
-    //     $('#two-int').removeClass('color-change-purple');
-    //     $('#three-int').removeClass('color-change-purple');
-    // };
-
     if ((mediaSevenLess.matches) && $(window).scrollTop() < 240) {
         $('#one').addClass('color-change-purple');
         $('#two').addClass('color-change-purple');
@@ -143,38 +128,3 @@ $(document).on('scroll', function(){
         $('#three-int').removeClass('color-change-purple');
     };
 });
-
-
-
-// $(document).on('scroll', function(){
-//     var homeOneTop = $('#home-1').offset();
- 
-//     if ( $(window).scrollTop() > homeOneTop.top) {
-//         $('#one').addClass('color-change-purple');
-//         $('#two').addClass('color-change-purple');
-//         $('#three').addClass('color-change-purple');
-//         $('#apply-button').addClass('apply-button-show');
-
-//     } else {
-//         $('#one').removeClass('color-change-purple');
-//         $('#two').removeClass('color-change-purple');
-//         $('#three').removeClass('color-change-purple');
-//         $('#apply-button').removeClass('apply-button-show');
-//     };
-  
-// });
-
-
-
-
-
-// $(window).scroll(function () { 
-//     var mediaSeven = window.matchMedia('(max-width: 768px)');
-//     var homeOneTop = $('#home-1').offset();
-//      var mediaSeven = window.matchMedia('(max-width: 768px)');
-//      var fiftyPercent = $(window).height()*0.5;
-
-//     if ((mediaSeven.matches) && ($(window).scrollTop() > $(window).height()*0.5)) {
-//         $('#header-top').addClass('header-top-fixed');
-//     };
-// });

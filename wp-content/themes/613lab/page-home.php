@@ -125,7 +125,7 @@ if(have_posts()){
                         </div>
                         <div class="col-md-6 order-md-4">
                             <div class="step-2 application-width-bottom">
-                                <div class="application-box">
+                                <div class="application-box app-box-bottom">
                                     <h2 class="app-number">2</h2>
                                     <div class="app-text"><?php the_field('application-step-2') ?></div>
                                 </div>
@@ -133,7 +133,7 @@ if(have_posts()){
                         </div>
                         <div class="col-md-6 order-md-5">
                             <div class="step-3 application-width-bottom">
-                                <div class="application-box">
+                                <div class="application-box app-box-bottom">
                                     <h2 class="app-number">3</h2>
                                     <div class="app-text"><?php the_field('application-step-3') ?></div>
                                 </div>
